@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles100.css">
+	<title> Text Expand </title>
+
+</head>
+
+<body>
+	<ul id="foo" class="hidden-text">
+	<li> D </li>
+	<li class="hidden">o</li>
+	<li class="hidden">m</li>
+	<li class="hidden">i</li>
+	<li class="hidden">n</li>
+	<li class="hidden">i</li>
+	<li class="hidden">c</li>
+	<li class="spaced">R</li>
+	<li class="hidden">e</li>
+	<li class="hidden">g</li>
+	<li class="hidden">o</li>
+	</ul>
+
+
+
+<!-- grabs foo element (list itself) and sets a timeout of 1 second so we can toggle off the hidden text class -->
+	<script>
+		const text = document.querySelector("#foo");
+		setTimeout(() => {
+			text.classList.toggle("hidden-text");
+		}, 1000);
+	</script>
+
+</body>
+
+</html>

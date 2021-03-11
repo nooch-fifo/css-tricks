@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0l
+  box-sizing:border-box;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+  font-family: "Source Code pro";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  transition: all 1.5s ease-in-out;
+  max-width: 42px;
+}
+
+.hidden-text li.spaced {
+  padding-left: 0;
+}
+
+li.spaced {
+  padding-left: 16px;
+}
+
+.hidden-text li.hidden {
+  opacity: 0;
+  max-width: 0;
+}

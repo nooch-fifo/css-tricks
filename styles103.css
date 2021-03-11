@@ -1,0 +1,41 @@
+.please{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  font-size: 4vw;
+  color: #ffffff;
+  -webkit-text-stroke: 0.1vw #2f2e2e;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #da0c0c;
+  -webkit-text-stroke: 0vw #2f2e2e;
+  border-right: 2px solid #da0c0c;
+  overflow: hidden;
+  animation: animate 6s linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes animate
+{
+  0%, 10%, 100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 100%;
+  }
+}
